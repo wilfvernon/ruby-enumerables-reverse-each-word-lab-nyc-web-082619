@@ -1,6 +1,8 @@
 def reverse_each_word(string)
-  reverse = string.split(",")
-  puts reverse
+  array = string.split(",")
+  reverse = Array.new
+  array.each {|w| reverse.push(w.reverse)}
+  puts reverse.to_s
 end
 
 reverse_each_word("Is this an array?")
